@@ -62,7 +62,7 @@ const download = document.querySelector(".click");
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
-  itt = Number(piVal.value);
+ let itt = Number(piVal.value);
   for (let i = 1; i <= itt; i++) {
     const geometry = new THREE.BufferGeometry();
     let x = Math.floor(Math.random() * (main.h + 1));
